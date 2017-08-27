@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Delete this -->
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subsonic Radio Android app is in no way affiliated with Subsonic Radio, it is free and open source software developed by a fan as an easy way of listening to the radio on the go.
+
+This app has been developed by James Marsh (known in the underground fighting ring as jrmswell) and is provided for free.
+
+As mentioned above the app is open source, so have at it" />
+
+    <Button
+        android:id="@+id/githubButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GitHub" />
+
+    <Button
+        android:id="@+id/websiteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Website" />
+
+    <Button
+        android:id="@+id/subsonicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subsonic Website" />
+</LinearLayout>
