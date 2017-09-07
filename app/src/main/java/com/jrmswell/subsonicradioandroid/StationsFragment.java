@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 
@@ -64,8 +66,22 @@ public class StationsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_stations, container, false);
+
+        String[] stationNames = {"Requests", "Background", "Staff Picks", "Great Music Ride", "Main Street", "Wilderness Jct", "Future Land", "Star Tunnel", "Soarin'", "Living Seas", "Dole-Whip", "Tangaroa", "WEDway"};
+
+        ListView stationsDesc = (ListView) view.findViewById(R.id.stationsListView);
+
+        ArrayAdapter<String> stationsDescAdapter = new ArrayAdapter<String>(
+                getActivity(),
+                android.R.layout.simple_list_item_1,
+                stationNames
+        );
+
+        stationsDesc.setAdapter(stationsDescAdapter);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_stations, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -81,7 +97,7 @@ public class StationsFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            Toast.makeText(context, "See what stations are currently available", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "To start listening, select a station", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -105,4 +121,5 @@ public class StationsFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
 }
