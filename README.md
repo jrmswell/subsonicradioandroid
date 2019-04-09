@@ -1,5 +1,5 @@
 # Update
-Unfortunately, due to life getting in the way (cheifly University), I am shelving this project, I have made a few further updates here but nothing worth putting here. Maybe one day this will be updated again. Until then, see you in the future!
+Unfortunately, due to life getting in the way (chiefly University), I am shelving this project, I have made a few further updates here but nothing worth putting here. Maybe one day this will be updated again. Until then, see you in the future!
 
 # Subsonicradio Android App
 Subsonic Radio doesn't have an app anymore, let's do something about that. This is an unofficial project made by a fan of the site to make his life slightly easier
